@@ -3,7 +3,7 @@
   <h1 id="title"> {{ .Title }}</h1>
   {{ .Content }}
 
-  {{ range .Pages.ByDate.Reverse }}
+  {{ range where .Pages.ByDate.Reverse "Draft" false }}
     {{ partial "portfolio/item" .}}
   {{ end }}
 
