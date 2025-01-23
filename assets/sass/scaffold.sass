@@ -5,7 +5,7 @@
   box-sizing: border-box
 
 html
-  background-color: $primary-color
+  background-color: white
 
 body
   background-color: white
@@ -209,10 +209,10 @@ a:hover, a:focus, a:active
   position: static
   width: $content-width
   margin-left: $sidebar-width
+  margin-bottom: 160px
   float: none
   clear: none
   display: block
-  min-height: 88vh
 
   +tablet
     width: $content-width-tablet
@@ -224,8 +224,9 @@ a:hover, a:focus, a:active
     margin-left: 0
 
 footer
-  position: absolute
+  position: fixed
   width: $content-width
+  bottom: 0
   left: $sidebar-width
   background-color: $footer-background-color
   color: $grey-100
